@@ -1,0 +1,3 @@
+[submodule "roles/ansible-role-aem-security-test"]
+	path = roles/ansible-role-aem-security-test
+	url = git@github.com:aemdesign/ansible-role-aem-security-test.git
