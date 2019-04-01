@@ -1,0 +1,10 @@
+---
+## file: site.yml
+## This playbook deploys the whole application stack.
+
+- name: site deploy
+  hosts: localhost
+
+  roles:
+    - role: ansible-role-aem-security-test
+

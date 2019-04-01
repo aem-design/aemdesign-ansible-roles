@@ -1,0 +1,13 @@
+# file: localdev
+
+###########################
+# HOSTS
+###########################
+
+[docker-host]
+localhost ansible_connection=local
+
+###########################
+# SERVICE TO SERVER MAP
+###########################
+
