@@ -4,7 +4,7 @@
 
 - name: site deploy
   hosts: localhost
-
+  ignore_errors: true
   roles:
     - role: ansible-role-aem-security-test
 
