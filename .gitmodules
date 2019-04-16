@@ -1,3 +1,6 @@
 [submodule "roles/ansible-role-aem-security-test"]
 	path = roles/ansible-role-aem-security-test
 	url = git@github.com:aemdesign/ansible-role-aem-security-test.git
+[submodule "roles/ansible-role-aem-verify"]
+	path = roles/ansible-role-aem-verify
+	url = git@github.com:aem-design/ansible-role-aem-verify.git
