@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T    D E S C R I P T I O N                                 -->
+    <!-- ====================================================================== -->
+
+    <groupId>design.aem</groupId>
+    <artifactId>aemdesign-ansible-roles</artifactId>
+    <packaging>pom</packaging>
+    <name>AEM Design - Operations - Ansible Galaxy Roles</name>
+    <version>1.0.92</version>
+    <description>Roles hosted in Ansible Galaxy</description>
+
+    <developers>
+        <developer>
+            <email>max@aem.design</email>
+            <name>Max Barrass</name>
+        </developer>
+    </developers>
+
+    <properties>
+        <template>template-centos-atomic-virtualbox.json</template>
+        <antelope.version>3.2.10</antelope.version>
+    </properties>
+
+    <scm>
+        <connection>scm:git:https://github.com/aem-design/aemdesign-deploy.git</connection>
+        <developerConnection>scm:git:https://github.com/aem-design/aemdesign-deploy.git</developerConnection>
+        <url>https://github.com/aem-design/aemdesign-deploy.git</url>
+    </scm>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/aem-design/aemdesign-aem-core/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <site>
+            <id>api.wiki</id>
+            <url>https://github.com/aem-design/aemdesign-aem-core/wiki</url>
+        </site>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.tigris.antelope</groupId>
+                <artifactId>antelopetasks</artifactId>
+                <version>${antelope.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>co.escapeideas.maven</groupId>
+                <artifactId>ansible-maven-plugin</artifactId>
+                <version>1.2.0</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+
+</project>
