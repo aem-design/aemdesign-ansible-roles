@@ -60,3 +60,5 @@ devops___*
 
 #ansible
 *.retry
+
+roles/tmp/*
