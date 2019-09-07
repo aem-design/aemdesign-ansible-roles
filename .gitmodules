@@ -10,3 +10,36 @@
 [submodule "roles/ansible-role-docker-container"]
 	path = roles/ansible-role-docker-container
 	url = git@github.com:aem-design/ansible-role-docker-container.git
+[submodule "roles/ansible-role-aem-license"]
+	path = roles/ansible-role-aem-license
+	url = git@github.com:aem-design/ansible-role-aem-license.git
+[submodule "roles/ansible-role-aem"]
+	path = roles/ansible-role-aem
+	url = git@github.com:aem-design/ansible-role-aem.git
+[submodule "roles/ansible-role-config-iptables"]
+	path = roles/ansible-role-config-iptables
+	url = git@github.com:aem-design/ansible-role-config-iptables.git
+[submodule "roles/ansible-role-aem-package"]
+	path = roles/ansible-role-aem-package
+	url = git@github.com:aem-design/ansible-role-aem-package.git
+[submodule "roles/ansible-role-dispatcher"]
+	path = roles/ansible-role-dispatcher
+	url = git@github.com:aem-design/ansible-role-dispatcher.git
+[submodule "roles/ansible-role-selenium-grid-node"]
+	path = roles/ansible-role-selenium-grid-node
+	url = git@github.com:aem-design/ansible-role-selenium-grid-node.git
+[submodule "roles/ansible-role-selenium-grid"]
+	path = roles/ansible-role-selenium-grid
+	url = git@github.com:aem-design/ansible-role-selenium-grid.git
+[submodule "roles/ansible-role-docker-login"]
+	path = roles/ansible-role-docker-login
+	url = git@github.com:aem-design/ansible-role-docker-login.git
+[submodule "roles/ansible-role-docker-available"]
+	path = roles/ansible-role-docker-available
+	url = git@github.com:aem-design/ansible-role-docker-available.git
+[submodule "roles/ansible-role-jenkins"]
+	path = roles/ansible-role-jenkins
+	url = git@github.com:aem-design/ansible-role-jenkins.git
+[submodule "roles/ansible-role-nexus"]
+	path = roles/ansible-role-nexus
+	url = git@github.com:aem-design/ansible-role-nexus.git
