@@ -12,6 +12,45 @@
 
 This repo aimed at testing Ansible Galaxy roles locally before publishing to Ansible Galaxy
 
+## Adding new module
+
+1. Create a new repo with README in github
+
+2. add new repo as submodule to the project
+
+```bash
+git submodule add git@github.com:aem-design/ansible-role-aem-toughday.git roles/ansible-role-aem-toughday
+```
+
+3. Use molecule to init the new module
+
+```
+cd roles/tmp
+workon aemdesign.3.7.4
+pip install molecule
+molecule init role -r ansible-role-aem-toughday
+```
+
+4. Update role config in temp folder
+
+5. Run `molecule converge` while you are developing the role
+
+```
+molecule converge
+<do some work on the role>
+molecule converge
+<see that some changes didn't work>
+molecule converge
+<see everything working well, commit my changes>
+molecule converge
+<idempotence check - make sure Ansible doesn't report any changes on a second run>
+molecule destroy
+```
+
+6. Manually move updated molecule config into the sumbodule and commit 
+
+Sub folder with your new role will be created.
+
 ## Testing
 
 To run molecule tests enter role directory, switch to virtual env and run molecule test
