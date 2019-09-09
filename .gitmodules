@@ -46,9 +46,6 @@
 [submodule "roles/ansible-role-nexus-upload-artifact"]
 	path = roles/ansible-role-nexus-upload-artifact
 	url = git@github.com:aem-design/ansible-role-nexus-upload-artifact.git
-[submodule "roles/ansible-role-nexus-create-repo"]
-	path = roles/ansible-role-nexus-create-repo
-	url = git@github.com:aem-design/ansible-role-nexus-create-repo.git
 [submodule "roles/ansible-role-nexus-api"]
 	path = roles/ansible-role-nexus-api
 	url = git@github.com:aem-design/ansible-role-nexus-api.git
