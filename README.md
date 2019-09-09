@@ -40,6 +40,8 @@ molecule converge
 <do some work on the role>
 molecule converge
 <see that some changes didn't work>
+molecule lint
+<fix all the typos>
 molecule converge
 <see everything working well, commit my changes>
 molecule converge
