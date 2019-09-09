@@ -7,7 +7,7 @@
     <!-- ====================================================================== -->
 
     <groupId>design.aem</groupId>
-    <version>.</version>
+    <version>1.0.0</version>
     <artifactId>aemdesign-ansible-roles</artifactId>
     <packaging>pom</packaging>
     <name>AEM Design - Operations - Ansible Galaxy Roles</name>
