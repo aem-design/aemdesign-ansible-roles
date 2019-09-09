@@ -44,6 +44,8 @@ molecule lint
 <fix all the typos>
 molecule converge
 <see everything working well, commit my changes>
+molecule test
+<see everything working well, commit my changes>
 molecule converge
 <idempotence check - make sure Ansible doesn't report any changes on a second run>
 molecule destroy
