@@ -14,7 +14,9 @@ This repo aimed at testing Ansible Galaxy roles locally before publishing to Ans
 
 ## Adding new module
 
-0. Before you start please read this [Testing Ansible automation with molecule](https://redhatnordicssa.github.io/how-we-test-our-roles). 
+0. Before you start please read these 
+    - [Testing Ansible automation with molecule](https://redhatnordicssa.github.io/how-we-test-our-roles)
+    - [Moelcule Configuration](https://molecule.readthedocs.io/en/stable/configuration.html#) 
 
 1. Create a new repo with README in github
 
