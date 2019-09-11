@@ -12,7 +12,7 @@
 
 This repo aimed at testing Ansible Galaxy roles locally before publishing to Ansible Galaxy
 
-## Adding new module
+## Migrating old module to Molecule v2
 
 0. Before you start please read these 
     - [Testing Ansible automation with molecule](https://redhatnordicssa.github.io/how-we-test-our-roles)
@@ -57,6 +57,8 @@ molecule destroy
 
 6. Manually move updated molecule config into the sumbodule and commit 
 
+7. Run `molecule test` to full process works, if it does not don't bother committing.
+
 Sub folder with your new role will be created.
 
 ## Testing
@@ -64,7 +66,7 @@ Sub folder with your new role will be created.
 To run molecule tests enter role directory, switch to virtual env and run molecule test
 
 ```bash
-cd roles/ansible-role-aem-security-test
+cd roles/ansible-role-aem-verify
 workon aemdesign.3.7.2
 molecule test
 ```
