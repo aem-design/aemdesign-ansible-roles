@@ -7,9 +7,6 @@
 [submodule "roles/ansible-role-aem-toughday"]
 	path = roles/ansible-role-aem-toughday
 	url = git@github.com:aem-design/ansible-role-aem-toughday.git
-[submodule "roles/ansible-role-docker-container"]
-	path = roles/ansible-role-docker-container
-	url = git@github.com:aem-design/ansible-role-docker-container.git
 [submodule "roles/ansible-role-aem-license"]
 	path = roles/ansible-role-aem-license
 	url = git@github.com:aem-design/ansible-role-aem-license.git
