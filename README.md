@@ -12,6 +12,12 @@
 
 This repo aimed at testing Ansible Galaxy roles locally before publishing to Ansible Galaxy
 
+## Cloning
+
+This repo links all roles using git submodules. When cloning this repo you need to use the `--recursive` flag to tell git to pull all the submodules.
+
+`git clone --recursive git@github.com:aem-design/aemdesign-ansible-roles.git`
+
 ## Migrating old module to Molecule v2
 
 0. Before you start please read these 
