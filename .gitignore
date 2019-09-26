@@ -62,3 +62,5 @@ devops___*
 *.retry
 
 roles/tmp/*
+
+roles/aem_design.*

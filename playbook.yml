@@ -1,0 +1,70 @@
+---
+- name: Converge
+  hosts: instance
+  become: true
+  vars:
+    local_role_name: "ansible-role-aem"
+    role_name: "{% if lookup('env','ROLE_NAME_FULL') %}{{ lookup('env','ROLE_NAME_FULL') }}{% else %}{{ local_role_name }}{% endif %}"
+    test_container_name: "aemtest"
+
+  pre_tasks:
+    - name: get docker host ip
+      become: true
+      shell: |
+        set -o pipefail
+        /sbin/ip route | awk '/default/ { print $3 }'
+      args:
+        executable: /bin/bash
+      register: dockerhost_ip
+      changed_when: false
+
+  tasks:
+    - name: run dispatcher
+      include_role:
+        name: "{{ role_name }}"
+      vars:
+        docker_published_ports: [
+          "5502:8080",
+          "59242:58242",
+          "59345:57345"
+        ]
+        docker_volumes: []
+        docker_container_name: "{{ test_container_name }}"
+        debug_hide: false
+        docker_host: "unix://tmp/docker.sock"
+        aem_license_key: "{{ service_aem_license_key }}"
+        aem_license_name: "{{ service_aem_license_name }}"
+        aem_port: "5502"
+        aem_host: "{{ dockerhost_ip.stdout }}"
+        package_files_skip: false
+        package_files: [
+          {
+            maven_repository_url: "http://{{ dockerhost_ip.stdout }}",
+            debug_hide: "false",
+            simple_name: "vanityurls using docker",
+            group_name: "Adobe",
+            package_version: "1.0.2",
+            package_name: "vanityurls-components",
+            package_url: "https://www.adobeaemcloud.com/content/companies/public/adobe/packages/\
+                  cq600/component/vanityurls-components/jcr%3acontent/package/file.res/vanityurls-components-1.0.2.zip",
+            file_name: "vanityurls-components-1.0.2.zip",
+            file_url_username: "{{ service_adobe_cloud_username }}",
+            file_url_password: "{{ service_adobe_cloud_password }}",
+            install_package_ansible: false,
+            install_package_docker: true,
+            docker_url: "unix://tmp/docker.sock"
+          },
+          {
+            debug_hide: "false",
+            simple_name: "acs twitter using docker",
+            group_name: "day_internal/consulting",
+            package_version: "1.0.0",
+            package_name: "com.adobe.acs.bundles.twitter4j-content",
+            package_url: "https://github.com/Adobe-Consulting-Services/com.adobe.acs.bundles.twitter4j/\
+                releases/download/com.adobe.acs.bundles.twitter4j-1.0.0/com.adobe.acs.bundles.twitter4j-content-1.0.0.zip",
+            file_name: "com.adobe.acs.bundles.twitter4j-content-1.0.0.zip",
+            install_package_ansible: false,
+            install_package_docker: true,
+            docker_url: "unix://tmp/docker.sock"
+          }
+        ]
