@@ -43,3 +43,6 @@
 [submodule "roles/ansible-role-nexus-api"]
 	path = roles/ansible-role-nexus-api
 	url = git@github.com:aem-design/ansible-role-nexus-api.git
+[submodule "roles/ansible-role-aem-content"]
+	path = roles/ansible-role-aem-content
+	url = git@github.com:aem-design/ansible-role-aem-content.git
