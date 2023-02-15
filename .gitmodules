@@ -1,48 +1,64 @@
 [submodule "roles/ansible-role-aem-security-test"]
 	path = roles/ansible-role-aem-security-test
 	url = git@github.com:aemdesign/ansible-role-aem-security-test.git
+	branch = master
 [submodule "roles/ansible-role-aem-verify"]
 	path = roles/ansible-role-aem-verify
 	url = git@github.com:aem-design/ansible-role-aem-verify.git
+	branch = master
 [submodule "roles/ansible-role-aem-toughday"]
 	path = roles/ansible-role-aem-toughday
 	url = git@github.com:aem-design/ansible-role-aem-toughday.git
+	branch = master
 [submodule "roles/ansible-role-aem-license"]
 	path = roles/ansible-role-aem-license
 	url = git@github.com:aem-design/ansible-role-aem-license.git
+	branch = master
 [submodule "roles/ansible-role-aem"]
 	path = roles/ansible-role-aem
 	url = git@github.com:aem-design/ansible-role-aem.git
+	branch = master
 [submodule "roles/ansible-role-config-iptables"]
 	path = roles/ansible-role-config-iptables
 	url = git@github.com:aem-design/ansible-role-config-iptables.git
+	branch = master
 [submodule "roles/ansible-role-aem-package"]
 	path = roles/ansible-role-aem-package
 	url = git@github.com:aem-design/ansible-role-aem-package.git
+	branch = master
 [submodule "roles/ansible-role-dispatcher"]
 	path = roles/ansible-role-dispatcher
 	url = git@github.com:aem-design/ansible-role-dispatcher.git
+	branch = master
 [submodule "roles/ansible-role-selenium-grid-node"]
 	path = roles/ansible-role-selenium-grid-node
 	url = git@github.com:aem-design/ansible-role-selenium-grid-node.git
+	branch = master
 [submodule "roles/ansible-role-selenium-grid"]
 	path = roles/ansible-role-selenium-grid
 	url = git@github.com:aem-design/ansible-role-selenium-grid.git
+	branch = master
 [submodule "roles/ansible-role-docker-login"]
 	path = roles/ansible-role-docker-login
 	url = git@github.com:aem-design/ansible-role-docker-login.git
+	branch = master
 [submodule "roles/ansible-role-docker-available"]
 	path = roles/ansible-role-docker-available
 	url = git@github.com:aem-design/ansible-role-docker-available.git
+	branch = master
 [submodule "roles/ansible-role-jenkins"]
 	path = roles/ansible-role-jenkins
 	url = git@github.com:aem-design/ansible-role-jenkins.git
+	branch = master
 [submodule "roles/ansible-role-nexus"]
 	path = roles/ansible-role-nexus
 	url = git@github.com:aem-design/ansible-role-nexus.git
+	branch = master
 [submodule "roles/ansible-role-nexus-api"]
 	path = roles/ansible-role-nexus-api
 	url = git@github.com:aem-design/ansible-role-nexus-api.git
+	branch = master
 [submodule "roles/ansible-role-aem-content"]
 	path = roles/ansible-role-aem-content
 	url = git@github.com:aem-design/ansible-role-aem-content.git
+	branch = master
